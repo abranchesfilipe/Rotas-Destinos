@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açores - São Miguel | Rotas & Destinos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { primary: '#24577a', secondary: '#2697b9', lightbg: '#f3f7fa' } }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Navegação simplificada -->
+    <header class="flex justify-between items-center px-4 md:px-12 py-5 border-b shadow-sm">
+        <div class="text-xl md:text-2xl font-bold text-primary">✈ Rotas & Destinos</div>
+        <a href="index.html" class="text-gray-600 hover:text-primary font-bold">← Voltar</a>
+    </header>
+
+    <main class="py-10 px-4 md:px-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+                    <!-- Esquerda: Galeria de Imagens -->
+            <div>
+                <h3 class="text-sm text-gray-500 font-bold mb-3 uppercase tracking-wider">Galeria de Fotografias</h3>
+                
+                <!-- Imagem Principal -->
+                <img src="Imagens/Imagensacores-1.jpg.jpg" alt="Trilho e Lagoa em São Miguel" 
+                class="w-full h-80 object-cover rounded-xl mb-4 bg-lightbg shadow-sm">
+                
+                <!-- Miniaturas -->
+                <div class="grid grid-cols-4 gap-2">
+                    <img src="Imagens/Imagensacores-2.jpg.jpg" alt="Vista aérea das Lagoas" 
+                    class="h-20 w-full object-cover rounded-lg shadow-sm hover:opacity-80 transition cursor-pointer">
+                    <img src="Imagens/Imagensacores-3.jpg.jpg" alt="Escadaria com azulejos e Igreja" 
+                    class="h-20 w-full object-cover rounded-lg shadow-sm hover:opacity-80 transition cursor-pointer">
+                    <img src="Imagens/Imagensacores-4.jpg.jpg" alt="Fumarolas nas Furnas" 
+                    class="h-20 w-full object-cover rounded-lg shadow-sm hover:opacity-80 transition cursor-pointer">
+                    <img src="Imagens/Imagensacores-5.jpg.jpg" alt="Cascata e Piscina Termal" 
+                    class="h-20 w-full object-cover rounded-lg shadow-sm hover:opacity-80 transition cursor-pointer">
+                </div>
+            </div>
+
+            <!-- Direita: Informações e Reserva (Baseado no wireframe) -->
+            <div class="bg-white border rounded-3xl p-8 shadow-lg flex flex-col justify-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-primary mb-4">Açores - São Miguel</h1>
+                <p class="text-gray-600 mb-8">Descubra a ilha verde, entre lagoas vulcânicas, paisagens deslumbrantes e experiências autênticas.</p>
+                
+                <h3 class="text-sm text-gray-500 font-bold mb-3 uppercase">O que inclui</h3>
+                <ul class="text-gray-700 space-y-2 mb-8">
+                    <li>• 7 noites de alojamento</li>
+                    <li>• Pequenos-almoços</li>
+                    <li>• Passeios e experiências locais</li>
+                    <li>• Transferes de aeroporto</li>
+                </ul>
+
+                <div class="flex flex-col md:flex-row justify-between items-center mt-auto pt-6 border-t">
+                    <div class="text-center md:text-left mb-4 md:mb-0">
+                        <p class="text-gray-500 text-sm">A partir de</p>
+                        <p class="text-4xl font-bold text-primary">€ 1.290</p>
+                    </div>
+                    <button class="bg-[#e67e22] hover:bg-[#d35400] text-white px-8 py-4 rounded-lg font-bold text-lg w-full md:w-auto transition">
+                        RESERVAR
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção do Itinerário (Baseado no wireframe) -->
+        <div class="mt-16">
+            <h2 class="text-2xl font-bold text-primary uppercase mb-6">Itinerário</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Dia 1 -->
+                <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm">
+                    <p class="text-xs text-gray-400 font-bold uppercase mb-1">Dia 1</p>
+                    <h4 class="font-bold text-primary mb-2">Chegada a Ponta Delgada</h4>
+                    <p class="text-sm text-gray-600">Receção e check-in no alojamento.</p>
+                </div>
+                <!-- Dia 2 -->
+                <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm">
+                    <p class="text-xs text-gray-400 font-bold uppercase mb-1">Dia 2</p>
+                    <h4 class="font-bold text-primary mb-2">Lagoa das Sete Cidades</h4>
+                    <p class="text-sm text-gray-600">Miradouros e passeio pela costa.</p>
+                </div>
+                <!-- Dia 3 -->
+                <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm">
+                    <p class="text-xs text-gray-400 font-bold uppercase mb-1">Dia 3</p>
+                    <h4 class="font-bold text-primary mb-2">Furnas e águas termais</h4>
+                    <p class="text-sm text-gray-600">Gastronomia e natureza vulcânica.</p>
+                </div>
+                <!-- Dia 4 -->
+                <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm">
+                    <p class="text-xs text-gray-400 font-bold uppercase mb-1">Dia 4</p>
+                    <h4 class="font-bold text-primary mb-2">Ilhéu de Vila Franca</h4>
+                    <p class="text-sm text-gray-600">Regresso e tempo livre.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

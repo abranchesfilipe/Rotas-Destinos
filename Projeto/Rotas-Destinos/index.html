@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotas & Destinos | Agência de Viagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">✈ Rotas & Destinos</div>
+        <button class="menu-botao" onclick="abrirMenu()" aria-label="Abrir menu">☰</button>
+        <nav id="menu">
+            <a href="index.html">Início</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="contactos.html">Contactos</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner-texto">
+            <h1>Descubra o mundo connosco!</h1>
+            <p>Explore novos destinos e viva experiências inesquecíveis.</p>
+            <a href="#destinos" class="botao-banner">Explorar destinos</a>
+        </div>
+    </section>
+
+    <section class="pesquisa">
+        <h2>Encontre a sua próxima viagem</h2>
+        <div class="pesquisa-caixa">
+            <input type="text" id="destino" placeholder="Para onde quer viajar?">
+            <button onclick="pesquisar()">Procurar</button>
+        </div>
+    </section>
+
+    <section class="destinos" id="destinos">
+        <h2>Destinos em Destaque</h2>
+        <p class="subtitulo">Descubra alguns dos lugares mais incríveis do mundo.</p>
+        <div class="destinos-container">
+            <article class="destino-card">
+                <img src="Imagens/ImagemParis.jpg.jpeg" alt="Paris">
+                <div class="destino-info">
+                    <h3>Paris, França</h3>
+                    <p>Romance, cultura e monumentos incríveis.</p>
+                    <span>A partir de 299 €</span>
+                </div>
+            </article>
+            <article class="destino-card">
+                <img src="Imagens/imagemGrecia.jpg.jpeg" alt="Santorini">
+                <div class="destino-info">
+                    <h3>Santorini, Grécia</h3>
+                    <p>Praias paradisíacas e paisagens únicas.</p>
+                    <span>A partir de 449 €</span>
+                </div>
+            </article>
+            <article class="destino-card">
+                <img src="Imagens/Imagensacores-1.jpg.jpg" alt="Açores">
+                <div class="destino-info">
+                    <h3>Açores, Portugal</h3>
+                    <p>Natureza vulcânica e paisagens deslumbrantes.</p>
+                    <span>A partir de 189 €</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="ofertas">
+        <h2>Ofertas Especiais</h2>
+        <div class="oferta-caixa">
+            <h3>Viaje mais, gaste menos!</h3>
+            <p>Aproveite os nossos pacotes de viagem e descubra novos destinos a preços especiais.</p>
+            <a href="ofertas.html" class="botao">Ver ofertas</a>
+        </div>
+    </section>
+
+    <section class="testemunhos">
+        <h2>O que dizem os nossos clientes?</h2>
+        <div class="testemunhos-container">
+            <article class="testemunho-card">
+                <p>“Uma experiência fantástica! A viagem foi muito bem organizada.”</p>
+                <h4>Maria Silva</h4>
+                <span>★★★★★</span>
+            </article>
+            <article class="testemunho-card">
+                <p>“Descobri destinos incríveis. Recomendo esta agência!”</p>
+                <h4>João Costa</h4>
+                <span>★★★★★</span>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="rodape-container">
+            <div><h3>Rotas & Destinos</h3><p>O mundo à sua espera!</p></div>
+            <div><h3>Contactos</h3><p>Lisboa, Portugal</p><p>+351 210 000 000</p><p>info@rotasedestinos.pt</p></div>
+            <div><h3>Links úteis</h3><p><a href="destinos.html">Destinos</a></p><p><a href="ofertas.html">Ofertas</a></p><p><a href="contactos.html">Contactos</a></p></div>
+        </div>
+        <div class="copyright">© 2026 Rotas & Destinos. Todos os direitos reservados.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
